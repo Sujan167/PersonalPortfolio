@@ -73,7 +73,7 @@ export default function Projects() {
             Featured Work
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto"
+            className="text-slate-600 max-w-2xl mx-auto text-justify"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -117,7 +117,7 @@ export default function Projects() {
               </ul>
               
               <h5 className="text-lg font-bold mb-4 text-slate-900">Architecture</h5>
-              <p className="text-slate-600 mb-6">
+              <p className="text-slate-600 mb-6 text-justify">
                 {majorProject.architecture}
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function Projects() {
             >
               <CardContent className="p-6">
                 <h4 className="text-xl font-bold mb-2">{project.title}</h4>
-                <p className="text-slate-600 mb-4">{project.description}</p>
+                <p className="text-slate-600 mb-4 text-justify">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
                     <Badge key={i} variant="secondary" className="bg-blue-50 text-primary hover:bg-blue-100">

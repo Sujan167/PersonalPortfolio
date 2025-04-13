@@ -18,7 +18,7 @@ export default function Hero() {
             <h2 className="text-2xl md:text-3xl font-medium text-slate-600 mb-6">
               Software Developer & DevOps Engineer
             </h2>
-            <p className="text-lg text-slate-600 mb-8 max-w-xl">
+            <p className="text-lg text-slate-600 mb-8 max-w-xl text-justify">
               Building, deploying, and managing scalable distributed systems with 3 years of professional experience.
             </p>
             <div className="flex flex-wrap gap-4">

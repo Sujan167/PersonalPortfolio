@@ -30,10 +30,10 @@ export default function About() {
           >
             <h2 className="text-2xl font-bold mb-2 text-primary">About Me</h2>
             <h3 className="text-3xl font-bold mb-6">Passionate about building scalable systems</h3>
-            <p className="text-slate-600 mb-6">
+            <p className="text-slate-600 mb-6 text-justify">
               I'm a motivated Software Developer and DevOps Engineer with around 3 years of experience in building, deploying, and managing scalable distributed systems. I'm proficient in software development, cloud services, containerization, and modern DevOps practices.
             </p>
-            <p className="text-slate-600 mb-6">
+            <p className="text-slate-600 mb-6 text-justify">
               Currently, I'm completing my final semester in Computer Science and Information Technology (CSIT) at Ambition College, Baneshwor, while working as a Full Stack Developer at Yayawar Tech Pvt. Ltd.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

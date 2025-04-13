@@ -150,7 +150,7 @@ export default function Contact() {
                       <Github className="h-5 w-5" />
                     </a>
                     <a 
-                      href="https://linkedin.com/in/" 
+                      href="https://www.linkedin.com/in/sujan-basnet-a7503623b/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-slate-900 hover:bg-primary text-white p-3 rounded-full transition-colors"

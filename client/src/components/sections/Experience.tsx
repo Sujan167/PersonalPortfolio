@@ -34,7 +34,7 @@ export default function Experience() {
             Work Journey
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto"
+            className="text-slate-600 max-w-2xl mx-auto text-justify"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="hero" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="hero" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center">
           <motion.div 
@@ -12,13 +12,13 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground dark:text-white">
               Hi, I'm <span className="text-primary">Sujan Basnet</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-medium text-slate-600 mb-6">
+            <h2 className="text-2xl md:text-3xl font-medium text-slate-600 dark:text-slate-300 mb-6">
               Software Developer & DevOps Engineer
             </h2>
-            <p className="text-lg text-slate-600 mb-8 max-w-xl text-justify">
+            <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-xl text-justify">
               Building, deploying, and managing scalable distributed systems with 3 years of professional experience.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -46,15 +46,15 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-primary to-indigo-500 flex items-center justify-center">
-                <div className="w-60 h-60 md:w-76 md:h-76 rounded-full bg-slate-50 flex items-center justify-center text-center">
+                <div className="w-60 h-60 md:w-76 md:h-76 rounded-full bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-center">
                   <div>
                     <div className="text-6xl mb-2">👨‍💻</div>
-                    <div className="font-mono text-sm bg-slate-900 text-slate-50 px-2 py-1 rounded">Full Stack Developer</div>
+                    <div className="font-mono text-sm bg-slate-900 text-slate-50 dark:bg-slate-700 px-2 py-1 rounded">Full Stack Developer</div>
                   </div>
                 </div>
               </div>
               <motion.div 
-                className="absolute -right-4 -top-4 w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-xs"
+                className="absolute -right-4 -top-4 w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-xs overflow-hidden"
                 animate={{ scale: [0.95, 1.05, 0.95] }}
                 transition={{ 
                   repeat: Infinity, 
@@ -62,7 +62,18 @@ export default function Hero() {
                   ease: "easeInOut" 
                 }}
               >
-                DevOps<br/>Engineer
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-600 z-0"></div>
+                <div className="absolute inset-0 z-10 flex items-center justify-center">
+                  <div className="relative">
+                    <div className="absolute -top-2 -left-6 w-4 h-4 border-t-2 border-l-2 border-white opacity-70"></div>
+                    <div className="absolute -bottom-2 -right-6 w-4 h-4 border-b-2 border-r-2 border-white opacity-70"></div>
+                    <div className="flex flex-col items-center justify-center">
+                      <span className="text-[10px] tracking-wide">DEVOPS</span>
+                      <div className="h-px w-12 bg-white opacity-60 my-1"></div>
+                      <span className="text-[10px] tracking-wide">ENGINEER</span>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </motion.div>

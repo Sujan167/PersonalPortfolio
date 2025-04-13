@@ -18,7 +18,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-background dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-12">
           <motion.div 
@@ -29,11 +29,11 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-2xl font-bold mb-2 text-primary">About Me</h2>
-            <h3 className="text-3xl font-bold mb-6">Passionate about building scalable systems</h3>
-            <p className="text-slate-600 mb-6 text-justify">
+            <h3 className="text-3xl font-bold mb-6 text-foreground dark:text-white">Passionate about building scalable systems</h3>
+            <p className="text-slate-600 dark:text-slate-300 mb-6 text-justify">
               I'm a motivated Software Developer and DevOps Engineer with around 3 years of experience in building, deploying, and managing scalable distributed systems. I'm proficient in software development, cloud services, containerization, and modern DevOps practices.
             </p>
-            <p className="text-slate-600 mb-6 text-justify">
+            <p className="text-slate-600 dark:text-slate-300 mb-6 text-justify">
               Currently, I'm completing my final semester in Computer Science and Information Technology (CSIT) at Ambition College, Baneshwor, while working as a Full Stack Developer at Yayawar Tech Pvt. Ltd.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

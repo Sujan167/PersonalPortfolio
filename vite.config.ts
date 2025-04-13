@@ -19,6 +19,11 @@ export default defineConfig({
 		outDir: "dist",
 		emptyOutDir: true,
 		assetsDir: "assets",
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, "index.html"),
+			},
+		},
 	},
 	publicDir: "public",
 	server: {

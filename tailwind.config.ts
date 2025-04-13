@@ -8,15 +8,15 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        base: ["1.125rem", { lineHeight: "1.75rem" }], // 18px
-        sm: ["1rem", { lineHeight: "1.5rem" }], // 16px
-        xs: ["0.875rem", { lineHeight: "1.25rem" }], // 14px
-        lg: ["1.25rem", { lineHeight: "1.75rem" }], // 20px
-        xl: ["1.5rem", { lineHeight: "2rem" }], // 24px
-        "2xl": ["1.875rem", { lineHeight: "2.25rem" }], // 30px
-        "3xl": ["2.25rem", { lineHeight: "2.5rem" }], // 36px
-        "4xl": ["3rem", { lineHeight: "1" }], // 48px
-        "5xl": ["3.75rem", { lineHeight: "1" }], // 60px
+        base: ["0.875rem", { lineHeight: "1.5rem" }],    // 14px
+        sm: ["0.75rem", { lineHeight: "1.25rem" }],      // 12px 
+        xs: ["0.675rem", { lineHeight: "1rem" }],        // 11px
+        lg: ["1rem", { lineHeight: "1.5rem" }],          // 16px
+        xl: ["1.125rem", { lineHeight: "1.75rem" }],     // 18px
+        "2xl": ["1.25rem", { lineHeight: "1.75rem" }],   // 20px
+        "3xl": ["1.5rem", { lineHeight: "2rem" }],       // 24px
+        "4xl": ["1.875rem", { lineHeight: "2.25rem" }],  // 30px
+        "5xl": ["2.25rem", { lineHeight: "2.5rem" }],    // 36px
       },
       borderRadius: {
         lg: "var(--radius)",

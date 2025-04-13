@@ -69,7 +69,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-50">
+    <section id="skills" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -81,7 +81,7 @@ export default function Skills() {
             Skills
           </motion.h2>
           <motion.h3 
-            className="text-3xl font-bold mb-4"
+            className="text-3xl font-bold mb-4 text-foreground dark:text-white"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -90,7 +90,7 @@ export default function Skills() {
             Technical Expertise
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto text-justify"
+            className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -110,18 +110,18 @@ export default function Skills() {
           {skillCategories.map((category, idx) => (
             <motion.div 
               key={idx}
-              className="bg-white rounded-lg p-6 shadow-sm border border-gray-100"
+              className="bg-white dark:bg-slate-900 rounded-lg p-6 shadow-sm border border-gray-100 dark:border-slate-700"
               variants={fadeInUpItem}
             >
               <div className="flex items-center mb-4">
                 {category.icon}
-                <h4 className="text-lg font-bold">{category.title}</h4>
+                <h4 className="text-lg font-bold dark:text-white">{category.title}</h4>
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.pills.map((pill, index) => (
                   <span 
                     key={index} 
-                    className={`${category.colorClass} px-3 py-1 rounded-full text-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md`}
+                    className={`${category.colorClass} dark:bg-opacity-20 dark:text-opacity-90 px-3 py-1 rounded-full text-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md`}
                   >
                     {pill}
                   </span>
@@ -132,7 +132,7 @@ export default function Skills() {
         </motion.div>
 
         <motion.div 
-          className="mt-10 bg-white rounded-lg p-6 shadow-sm border border-gray-100"
+          className="mt-10 bg-white dark:bg-slate-900 rounded-lg p-6 shadow-sm border border-gray-100 dark:border-slate-700"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -140,13 +140,13 @@ export default function Skills() {
         >
           <div className="flex items-center mb-4">
             <Database className="h-6 w-6 text-primary mr-2" />
-            <h4 className="text-lg font-bold">Other Technologies</h4>
+            <h4 className="text-lg font-bold dark:text-white">Other Technologies</h4>
           </div>
           <div className="flex flex-wrap gap-2">
             {otherTechnologies.map((tech, index) => (
               <span 
                 key={index} 
-                className="bg-purple-50 text-purple-600 px-3 py-1 rounded-full text-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md"
+                className="bg-purple-50 dark:bg-purple-900 dark:bg-opacity-30 text-purple-600 dark:text-purple-300 px-3 py-1 rounded-full text-sm transition-transform duration-200 hover:-translate-y-1 hover:shadow-md"
               >
                 {tech}
               </span>

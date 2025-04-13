@@ -52,7 +52,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-slate-50">
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -64,7 +64,7 @@ export default function Projects() {
             Projects
           </motion.h2>
           <motion.h3 
-            className="text-3xl font-bold mb-4"
+            className="text-3xl font-bold mb-4 text-foreground dark:text-white"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -73,7 +73,7 @@ export default function Projects() {
             Featured Work
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto text-justify"
+            className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -85,7 +85,7 @@ export default function Projects() {
 
         {/* Major Project */}
         <motion.div 
-          className="bg-white rounded-lg shadow-md overflow-hidden mb-16"
+          className="bg-white dark:bg-slate-900 rounded-lg shadow-md overflow-hidden mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -106,8 +106,8 @@ export default function Projects() {
               </div>
             </div>
             <div className="md:w-3/5 p-6 md:p-10">
-              <h5 className="text-lg font-bold mb-4 text-slate-900">Key Features</h5>
-              <ul className="space-y-3 text-slate-600 mb-6">
+              <h5 className="text-lg font-bold mb-4 text-slate-900 dark:text-white">Key Features</h5>
+              <ul className="space-y-3 text-slate-600 dark:text-slate-300 mb-6">
                 {majorProject.features.map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -116,8 +116,8 @@ export default function Projects() {
                 ))}
               </ul>
               
-              <h5 className="text-lg font-bold mb-4 text-slate-900">Architecture</h5>
-              <p className="text-slate-600 mb-6 text-justify">
+              <h5 className="text-lg font-bold mb-4 text-slate-900 dark:text-white">Architecture</h5>
+              <p className="text-slate-600 dark:text-slate-300 mb-6 text-center">
                 {majorProject.architecture}
               </p>
             </div>

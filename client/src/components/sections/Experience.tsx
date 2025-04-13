@@ -13,7 +13,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 bg-background dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -25,7 +25,7 @@ export default function Experience() {
             Experience
           </motion.h2>
           <motion.h3 
-            className="text-3xl font-bold mb-4"
+            className="text-3xl font-bold mb-4 text-foreground dark:text-white"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -34,7 +34,7 @@ export default function Experience() {
             Work Journey
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto text-justify"
+            className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -45,7 +45,7 @@ export default function Experience() {
         </div>
 
         <div className="relative pl-8 md:pl-0 max-w-3xl mx-auto">
-          <div className="hidden md:block absolute left-0 top-0 bottom-0 w-0.5 bg-slate-200"></div>
+          <div className="hidden md:block absolute left-0 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700"></div>
           
           <motion.div 
             className="relative pl-0 md:pl-10 pb-10"
@@ -54,16 +54,16 @@ export default function Experience() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="absolute hidden md:block left-[-9px] top-6 h-[14px] w-[14px] rounded-full bg-primary border-2 border-slate-50 z-10"></div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="absolute hidden md:block left-[-9px] top-6 h-[14px] w-[14px] rounded-full bg-primary border-2 border-slate-50 dark:border-slate-800 z-10"></div>
+            <div className="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-slate-700">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                <h4 className="text-xl font-bold">Full Stack Developer</h4>
+                <h4 className="text-xl font-bold dark:text-white">Full Stack Developer</h4>
                 <div className="flex items-center mt-2 md:mt-0">
-                  <span className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm">2022 - Present</span>
+                  <span className="bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 px-3 py-1 rounded-full text-sm">2022 - Present</span>
                 </div>
               </div>
               <h5 className="text-lg font-medium text-primary mb-4">Yayawar Tech Pvt. Ltd.</h5>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-slate-600 dark:text-slate-300">
                 {experienceItems.map((item, index) => (
                   <motion.li 
                     key={index} 

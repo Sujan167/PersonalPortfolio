@@ -129,18 +129,18 @@ export default function Projects() {
           {otherProjects.map((project, index) => (
             <motion.div 
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-transform duration-300 hover:-translate-y-2"
+              className="bg-white dark:bg-slate-900 rounded-lg overflow-hidden shadow-sm border border-gray-100 dark:border-slate-700 transition-transform duration-300 hover:-translate-y-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * index, duration: 0.5 }}
             >
               <CardContent className="p-6">
-                <h4 className="text-xl font-bold mb-2">{project.title}</h4>
-                <p className="text-slate-600 mb-4 text-justify">{project.description}</p>
+                <h4 className="text-xl font-bold mb-2 dark:text-white">{project.title}</h4>
+                <p className="text-slate-600 dark:text-slate-300 mb-4 text-center">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary" className="bg-blue-50 text-primary hover:bg-blue-100">
+                    <Badge key={i} variant="secondary" className="bg-blue-50 dark:bg-blue-900 dark:bg-opacity-30 text-primary dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-800">
                       {tech}
                     </Badge>
                   ))}
@@ -150,7 +150,7 @@ export default function Projects() {
                     href={project.githubLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-primary hover:text-blue-700 font-medium flex items-center transition-colors"
+                    className="text-primary hover:text-blue-700 dark:hover:text-blue-400 font-medium flex items-center transition-colors"
                   >
                     <span>View on GitHub</span>
                     <ExternalLink className="h-4 w-4 ml-1" />

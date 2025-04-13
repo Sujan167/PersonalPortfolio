@@ -1,10 +1,23 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
+import animate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
-  content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        base: ["1.125rem", { lineHeight: "1.75rem" }], // 18px
+        sm: ["1rem", { lineHeight: "1.5rem" }], // 16px
+        xs: ["0.875rem", { lineHeight: "1.25rem" }], // 14px
+        lg: ["1.25rem", { lineHeight: "1.75rem" }], // 20px
+        xl: ["1.5rem", { lineHeight: "2rem" }], // 24px
+        "2xl": ["1.875rem", { lineHeight: "2.25rem" }], // 30px
+        "3xl": ["2.25rem", { lineHeight: "2.5rem" }], // 36px
+        "4xl": ["3rem", { lineHeight: "1" }], // 48px
+        "5xl": ["3.75rem", { lineHeight: "1" }], // 60px
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -86,5 +99,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  plugins: [typography, animate],
 } satisfies Config;

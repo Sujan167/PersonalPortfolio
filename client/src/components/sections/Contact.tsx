@@ -38,11 +38,15 @@ export default function Contact() {
 
     try {
       setIsSubmitting(true);
-      await apiRequest("POST", "/api/contact", formData);
+      
+      // Client-side only - open email client with prefilled data
+      const subject = encodeURIComponent(formData.subject);
+      const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage: ${formData.message}`);
+      window.open(`mailto:itssujan167@gmail.com?subject=${subject}&body=${body}`);
       
       toast({
-        title: "Message sent!",
-        description: `Thank you for your message, ${formData.name}! I'll get back to you soon.`,
+        title: "Email client opened",
+        description: `Thank you for your message, ${formData.name}! Please send the email through your email client.`,
       });
       
       // Clear form
@@ -54,8 +58,8 @@ export default function Contact() {
       });
     } catch (error) {
       toast({
-        title: "Error sending message",
-        description: "There was a problem sending your message. Please try again later.",
+        title: "Error opening email client",
+        description: "There was a problem opening your email client. Please contact directly at itssujan167@gmail.com",
         variant: "destructive"
       });
     } finally {

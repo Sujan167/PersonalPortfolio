@@ -27,7 +27,7 @@ export default function BackToTop() {
 
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/api/download-resume';
+    link.href = '/Resume_Sujan_Basnet.pdf';
     link.download = 'Sujan_Basnet_Resume.pdf';
     document.body.appendChild(link);
     link.click();

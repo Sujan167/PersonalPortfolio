@@ -66,13 +66,13 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-600 z-0"></div>
                 <div className="absolute inset-0 z-10 flex items-center justify-center p-2">
                   <div className="relative w-full h-full flex flex-col items-center justify-center">
-                    {/* Creative DevOps Logo */}
+                    {/* DevOps Infinity Logo */}
                     <div className="mb-1 relative">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 24 24" fill="none">
-                        <path d="M12 4L4 8L12 12L20 8L12 4Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M4 12L12 16L20 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M4 16L12 20L20 16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        <circle cx="12" cy="12" r="2" fill="white" />
+                        <path d="M18.178 8c-1.247 0-2.409.489-3.287 1.377l-2.891 2.887-2.891-2.887C8.231 8.489 7.07 8 5.822 8 3.162 8 1 10.162 1 12.822s2.162 4.822 4.822 4.822c1.247 0 2.409-.489 3.287-1.377l2.891-2.887 2.891 2.887c.878.888 2.04 1.377 3.287 1.377 2.66 0 4.822-2.162 4.822-4.822S20.838 8 18.178 8z" 
+                          stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M9.109 12.822 7.822 14.11a2.668 2.668 0 0 1-2 .822 2.835 2.835 0 0 1-2.822-2.822c0-.761.311-1.45.822-1.95.427-.427 1.012-.707 1.65-.79.461-.061.9.005 1.35.184.32.127.64.33.91.6l1.377 1.29M14.891 12.822l1.287 1.287c.27.27.59.474.91.6.45.18.889.246 1.35.185.638-.083 1.223-.363 1.65-.79.51-.5.822-1.189.822-1.95a2.835 2.835 0 0 0-2.822-2.822 2.668 2.668 0 0 0-2 .822l-1.287 1.287" 
+                          stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       <div className="absolute -top-1 -right-1 h-3 w-3 bg-red-500 rounded-full animate-pulse"></div>
                     </div>

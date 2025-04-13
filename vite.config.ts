@@ -13,7 +13,7 @@ export default defineConfig({
 			"@": resolve(__dirname, "./src"),
 		},
 	},
-	base: "/",
+	base: "/PersonalPortfolio/",
 	root: ".",
 	build: {
 		outDir: "dist",

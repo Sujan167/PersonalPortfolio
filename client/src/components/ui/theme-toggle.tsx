@@ -1,10 +1,31 @@
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/hooks/use-theme";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  
+  useEffect(() => {
+    // Check if dark mode is active
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    setTheme(isDarkMode ? 'dark' : 'light');
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    
+    // Update the document class
+    if (newTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    
+    // Save in local storage
+    localStorage.setItem('theme', newTheme);
+  };
 
   return (
     <Button

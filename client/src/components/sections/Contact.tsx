@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-background dark:bg-slate-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2 
@@ -76,7 +76,7 @@ export default function Contact() {
             Contact
           </motion.h2>
           <motion.h3 
-            className="text-3xl font-bold mb-4"
+            className="text-3xl font-bold mb-4 text-foreground dark:text-white"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -85,7 +85,7 @@ export default function Contact() {
             Get In Touch
           </motion.h3>
           <motion.p 
-            className="text-slate-600 max-w-2xl mx-auto"
+            className="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -103,42 +103,42 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-slate-50 rounded-lg p-8 shadow-sm border border-gray-100 h-full">
-              <h4 className="text-xl font-bold mb-6">Contact Information</h4>
+            <div className="bg-slate-50 dark:bg-slate-800 rounded-lg p-8 shadow-sm border border-gray-100 dark:border-slate-700 h-full">
+              <h4 className="text-xl font-bold mb-6 dark:text-white">Contact Information</h4>
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-blue-50 p-3 rounded-full text-primary mr-4">
+                  <div className="bg-blue-50 dark:bg-blue-900 p-3 rounded-full text-primary mr-4">
                     <Mail className="h-6 w-6" />
                   </div>
                   <div>
-                    <h5 className="font-medium mb-1">Email</h5>
+                    <h5 className="font-medium mb-1 dark:text-slate-200">Email</h5>
                     <a href="mailto:itssujan167@gmail.com" className="text-primary hover:underline">itssujan167@gmail.com</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-blue-50 p-3 rounded-full text-primary mr-4">
+                  <div className="bg-blue-50 dark:bg-blue-900 p-3 rounded-full text-primary mr-4">
                     <Phone className="h-6 w-6" />
                   </div>
                   <div>
-                    <h5 className="font-medium mb-1">Phone</h5>
+                    <h5 className="font-medium mb-1 dark:text-slate-200">Phone</h5>
                     <a href="tel:+9779862913309" className="text-primary hover:underline">+977 9862913309</a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-blue-50 p-3 rounded-full text-primary mr-4">
+                  <div className="bg-blue-50 dark:bg-blue-900 p-3 rounded-full text-primary mr-4">
                     <MapPin className="h-6 w-6" />
                   </div>
                   <div>
-                    <h5 className="font-medium mb-1">Location</h5>
-                    <p className="text-slate-600">Kaushaltar, Bhaktapur, Nepal</p>
+                    <h5 className="font-medium mb-1 dark:text-slate-200">Location</h5>
+                    <p className="text-slate-600 dark:text-slate-300">Kaushaltar, Bhaktapur, Nepal</p>
                   </div>
                 </div>
                 
                 <div className="pt-4">
-                  <h5 className="font-medium mb-4">Social Profiles</h5>
+                  <h5 className="font-medium mb-4 dark:text-slate-200">Social Profiles</h5>
                   <div className="flex space-x-4">
                     <a 
                       href="https://github.com/Sujan167" 
@@ -182,58 +182,58 @@ export default function Contact() {
           >
             <form 
               onSubmit={handleSubmit}
-              className="bg-white rounded-lg p-8 shadow-sm border border-gray-100"
+              className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-sm border border-gray-100 dark:border-slate-700"
             >
-              <h4 className="text-xl font-bold mb-6">Send Me a Message</h4>
+              <h4 className="text-xl font-bold mb-6 dark:text-white">Send Me a Message</h4>
               
               <div className="mb-6">
-                <Label htmlFor="name" className="text-sm font-medium text-slate-600 mb-2">Your Name</Label>
+                <Label htmlFor="name" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Your Name</Label>
                 <Input 
                   type="text" 
                   id="name" 
                   name="name" 
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                  className="w-full px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white" 
                   required 
                 />
               </div>
               
               <div className="mb-6">
-                <Label htmlFor="email" className="text-sm font-medium text-slate-600 mb-2">Your Email</Label>
+                <Label htmlFor="email" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Your Email</Label>
                 <Input 
                   type="email" 
                   id="email" 
                   name="email" 
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                  className="w-full px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white" 
                   required 
                 />
               </div>
               
               <div className="mb-6">
-                <Label htmlFor="subject" className="text-sm font-medium text-slate-600 mb-2">Subject</Label>
+                <Label htmlFor="subject" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Subject</Label>
                 <Input 
                   type="text" 
                   id="subject" 
                   name="subject" 
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                  className="w-full px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white" 
                   required 
                 />
               </div>
               
               <div className="mb-6">
-                <Label htmlFor="message" className="text-sm font-medium text-slate-600 mb-2">Message</Label>
+                <Label htmlFor="message" className="text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">Message</Label>
                 <Textarea 
                   id="message" 
                   name="message" 
                   rows={5} 
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" 
+                  className="w-full px-3 py-2 border border-gray-200 dark:border-slate-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-slate-700 dark:text-white" 
                   required 
                 />
               </div>

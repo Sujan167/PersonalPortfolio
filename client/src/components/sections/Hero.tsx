@@ -54,7 +54,7 @@ export default function Hero() {
                 </div>
               </div>
               <motion.div 
-                className="absolute -right-4 -top-4 w-20 h-20 rounded-full flex items-center justify-center text-white font-bold text-xs overflow-hidden"
+                className="absolute -right-4 -top-4 w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-xs overflow-hidden shadow-lg"
                 animate={{ scale: [0.95, 1.05, 0.95] }}
                 transition={{ 
                   repeat: Infinity, 
@@ -64,13 +64,18 @@ export default function Hero() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-emerald-600 z-0"></div>
                 <div className="absolute inset-0 z-10 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute -top-2 -left-6 w-4 h-4 border-t-2 border-l-2 border-white opacity-70"></div>
-                    <div className="absolute -bottom-2 -right-6 w-4 h-4 border-b-2 border-r-2 border-white opacity-70"></div>
+                  <div className="relative w-full h-full flex flex-col items-center justify-center">
+                    {/* DevOps Logo/Icon */}
+                    <div className="mb-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 8l4 4-4 4M8 12h8"></path>
+                      </svg>
+                    </div>
                     <div className="flex flex-col items-center justify-center">
-                      <span className="text-[10px] tracking-wide">DEVOPS</span>
-                      <div className="h-px w-12 bg-white opacity-60 my-1"></div>
-                      <span className="text-[10px] tracking-wide">ENGINEER</span>
+                      <span className="text-[11px] font-bold tracking-wide whitespace-nowrap">DEVOPS</span>
+                      <div className="h-px w-14 bg-white opacity-80 my-0.5"></div>
+                      <span className="text-[11px] font-bold tracking-wide whitespace-nowrap">ENGINEER</span>
                     </div>
                   </div>
                 </div>

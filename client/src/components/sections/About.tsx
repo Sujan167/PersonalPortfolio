@@ -83,8 +83,8 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg bg-slate-50 p-8 border border-gray-100 shadow-sm">
-              <h3 className="text-xl font-bold mb-6 flex items-center">
+            <div className="rounded-lg bg-slate-50 dark:bg-slate-800 p-8 border border-gray-100 dark:border-slate-700 shadow-sm">
+              <h3 className="text-xl font-bold mb-6 flex items-center dark:text-white">
                 <Shield className="h-5 w-5 mr-2 text-primary" />
                 Soft Skills
               </h3>
@@ -92,25 +92,25 @@ export default function About() {
                 {softSkills.map((skill, index) => (
                   <div key={index}>
                     <div className="flex justify-between mb-1">
-                      <span className="font-medium">{skill.name}</span>
-                      <span>{skill.value}%</span>
+                      <span className="font-medium dark:text-slate-200">{skill.name}</span>
+                      <span className="dark:text-slate-300">{skill.value}%</span>
                     </div>
                     <Progress value={skill.value} className="h-2" />
                   </div>
                 ))}
               </div>
               
-              <h3 className="text-xl font-bold mt-10 mb-6 flex items-center">
+              <h3 className="text-xl font-bold mt-10 mb-6 flex items-center dark:text-white">
                 <BookOpen className="h-5 w-5 mr-2 text-primary" />
                 Education
               </h3>
-              <div className="bg-white p-4 rounded-md border border-gray-100">
+              <div className="bg-white dark:bg-slate-700 p-4 rounded-md border border-gray-100 dark:border-slate-600">
                 <div className="flex justify-between">
-                  <h4 className="font-medium">Computer Science and Information Technology (CSIT)</h4>
-                  <span className="text-sm bg-blue-100 text-primary px-2 py-1 rounded">2021 - Present</span>
+                  <h4 className="font-medium dark:text-white">Computer Science and Information Technology (CSIT)</h4>
+                  <span className="text-sm bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 px-2 py-1 rounded">2021 - Present</span>
                 </div>
-                <p className="text-slate-600 mt-1">Ambition College, Baneshwor</p>
-                <p className="text-sm text-slate-600 mt-2">Final Semester</p>
+                <p className="text-slate-600 dark:text-slate-300 mt-1">Ambition College, Baneshwor</p>
+                <p className="text-sm text-slate-600 dark:text-slate-300 mt-2">Final Semester</p>
               </div>
             </div>
           </motion.div>

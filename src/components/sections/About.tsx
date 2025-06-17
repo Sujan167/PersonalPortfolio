@@ -17,8 +17,7 @@ export default function About() {
 					<motion.div className="md:w-1/2" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
 						<h2 className="text-2xl md:text-3xl font-bold mb-2 text-primary">About Me</h2>
 						<h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground dark:text-white">Passionate about building scalable systems</h3>
-						<p className="text-lg text-slate-600 dark:text-slate-300 mb-6 text-justify">I'm a motivated Software Developer and DevOps Engineer with around 3 years of experience in building, deploying, and managing scalable distributed systems. I'm proficient in software development, cloud services, containerization, and modern DevOps practices.</p>
-						<p className="text-lg text-slate-600 dark:text-slate-300 mb-6 text-justify">Currently, I'm completing my final semester in Computer Science and Information Technology (CSIT) at Ambition College, Baneshwor, while working as a Full Stack Developer at Yayawar Tech Pvt. Ltd.</p>
+						<p className="text-lg text-slate-600 dark:text-slate-300 mb-6 text-justify">I'm a motivated Software Developer and DevOps Engineer with around 3+ years of experience in building, deploying, and managing scalable distributed systems. I'm proficient in software development, cloud services, containerization, and modern DevOps practices.</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
 							<div className="flex items-start">
 								<div className="text-primary mr-3">

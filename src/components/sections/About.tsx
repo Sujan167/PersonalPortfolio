@@ -84,10 +84,9 @@ export default function About() {
 							<div className="bg-white dark:bg-slate-700 p-4 rounded-md border border-gray-100 dark:border-slate-600">
 								<div className="flex justify-between">
 									<h4 className="text-lg md:text-xl font-medium dark:text-white">Computer Science and Information Technology (CSIT)</h4>
-									<span className="text-lg bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 px-2 py-1 rounded">2021 - Present</span>
+									<span className="text-lg bg-blue-100 dark:bg-blue-900 text-primary dark:text-blue-200 px-2 py-1 rounded">2021 - 2025</span>
 								</div>
 								<p className="text-lg text-slate-600 dark:text-slate-300 mt-1">Ambition College, Baneshwor</p>
-								<p className="text-lg text-slate-600 dark:text-slate-300 mt-2">Final Semester</p>
 							</div>
 						</div>
 					</motion.div>

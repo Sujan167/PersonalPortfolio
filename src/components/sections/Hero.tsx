@@ -11,7 +11,7 @@ export default function Hero() {
 							Hi, I'm <span className="text-primary">Sujan Basnet</span>
 						</h1>
 						<h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-slate-600 dark:text-slate-300 mb-6">Software Developer & DevOps Engineer</h2>
-						<p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-xl text-justify">Building, deploying, and managing scalable distributed systems with 3 years of professional experience.</p>
+						<p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-xl text-justify">Full-stack Developer with 3+ years of experience building scalable, cloud-native applications. Skilled in backend development (Django, FastAPI, Golang, Node.js), cloud platforms (AWS), and DevOps practices. Proven track record in microservices architecture, SaaS development, and end-to-end project delivery.</p>
 						<div className="flex flex-wrap gap-4">
 							<Button asChild className="px-6 py-3 bg-primary text-white rounded-md font-medium hover:bg-blue-600 transition-colors">
 								<a href="#contact">Get in Touch</a>

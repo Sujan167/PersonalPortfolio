@@ -2,7 +2,21 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
 export default function Experience() {
-	const experienceItems = ["Developed, deployed and maintained web applications", "Managed distributed systems with event-driven architecture", "Implemented cloud solutions with AWS", "Developed scalable backend systems with Node.js, Django, FastAPI, Flask and Golang", "Designed dual-database architecture in Django projects", "Integrated Shopify API and implemented bulk migration to RDS", "Implemented centralized logging solutions"];
+	//const experienceItems = ["Developed, deployed and maintained web applications", "Managed distributed systems with event-driven architecture", "Implemented cloud solutions with AWS", "Developed scalable backend systems with Node.js, Django, FastAPI, Flask and Golang", "Designed dual-database architecture in Django projects", "Integrated Shopify API and implemented bulk migration to RDS", "Implemented centralized logging solutions"];
+	const experienceItems = [
+    "Re-architected a large monolithic application into an event-driven microservices system, improving modularity and deployment speed by 70%.",
+    "Decoupled the real-time chat module as part of this transformation, enabling support for 100K+ concurrent users with Redis Pub/Sub and WebSockets.",
+    "Refactored AWS Lambda functions using Golang, reducing cold starts by 40% and cutting cloud costs by ~25%.",
+    "Developed and deployed 10+ full-stack web applications using Django, FastAPI, Flask, Node.js, and Go.",
+    "Designed a multi-tenant SaaS architecture with secure data isolation and dynamic client onboarding within 5 minutes.",
+    "Implemented a dual-database strategy for flexible data handling and data separation.",
+    "Integrated Shopify API for inventory and order synchronization, reducing manual workload by 80%.",
+    "Led a bulk migration of production databases to Amazon RDS, improving reliability and reducing downtime by 30%.",
+    "Set up centralized logging and observability tools (ELK, Prometheus, Grafana), reducing issue resolution time by 50%.",
+    "Built CI/CD pipelines using GitHub Actions to streamline testing and deployment workflows.",
+    "Containerized applications using Docker, configured with Nginx for production readiness and zero-downtime deployments.",
+    "Started as an intern and independently delivered an Order Management System with integrated Authorize.Net payment processing for a freelance client."
+]
 
 	return (
 		<section id="experience" className="py-20 bg-background dark:bg-slate-900">
